@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(44, 161, 161);
+}
+
+main {
+    // background: red;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        h1 {
+            color: coral;
+        }
+    }
+    form {
+        width: 50%;
+        background-color: red;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 40px;
+        input {
+            font-family: 'Poppins', sans-serif;
+            text-indent: 5px;
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+        button {
+            font-family: 'Poppins', sans-serif;
+            border: none;
+            height: 40px;
+            width: 55px;
+            background: coral;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            i {
+                font-size: 20px;
+                color: rgb(0, 153, 153);
+            }
+        }
+    }
+    .list {
+        width: 100%;
+        // background: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+            // width: 330px;
+            width: 50%;
+            .todo {
+                background-color: coral;
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 0;
+                margin: 15px 0;
+                input {
+                    margin-left: 5px;
+                    background-color: coral;
+                    border: none;
+                    outline: none;
+                    color: rgb(0, 153, 153);
+                    font-weight: bold;
+                    font-size: 16px;
+                    &::placeholder {
+                        font-weight: bold;
+                        color: rgb(0, 153, 153);
+                        font-size: 16px;
+                    }
+                }
+                .buttons {
+                    button {
+                        font-family: 'Poppins', sans-serif;
+                        background: rgb(0, 153, 153);
+                        color: white;
+                        border: none;
+                        padding: 5px 10px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+        form {
+            width: 90%;
+        }
+        .list {
+            ul {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        form {
+            width: 95%;
+        }
+        .list {
+            width: 95%;
+            ul {
+                width: 100%;
+            }
+        }
+    }
+}
